@@ -1,6 +1,6 @@
 {
 	"name": "@hydre/deferred-promise",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Call a promise outside scope",
 	"author": "Sceat",
 	"main": "lib/deferredPromise.js",
