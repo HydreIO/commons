@@ -1,7 +1,7 @@
 {
 	"name": "@hydre/deferred-promise",
-	"version": "1.0.1",
-	"description": "Call a promise outside scope",
+	"version": "1.0.0",
+	"description": "Resolve a promise outside scope",
 	"author": "Sceat",
 	"main": "lib/deferredPromise.js",
 	"homepage": "https://hydre.io",
@@ -18,7 +18,9 @@
 	],
 	"scripts": {
 		"prepack": "npm run build",
-		"build": "babel src -d lib"
+		"build": "babel src -d lib",
+		"test": "babel-node ./test/index.js | tap-spec",
+		"ntest": "babel-node ./test/index.js | tnyan"
 	},
 	"publishConfig": {
 		"access": "public"
@@ -31,6 +33,9 @@
 		"@babel/plugin-proposal-decorators": "^7.2.3",
 		"@babel/plugin-proposal-function-bind": "^7.2.0",
 		"@babel/plugin-proposal-optional-chaining": "^7.2.0",
-		"@babel/preset-env": "^7.0.0-beta.51"
+		"@babel/preset-env": "^7.0.0-beta.51",
+		"blue-tape": "^1.0.0",
+		"tap-nyan": "^1.1.0",
+		"tap-spec": "^5.0.0"
 	}
 }

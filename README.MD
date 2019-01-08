@@ -31,6 +31,6 @@ const deferred = new dPromise()
 deferred.promise.then(console.log('slt'))
 
 setTimeout(() => {
-	deferred.resolve // or deferred.reject
+	deferred.resolve() // or deferred.reject()
 }, 1000)
 ```
