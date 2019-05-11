@@ -14,7 +14,7 @@
 [discord]: https://img.shields.io/discord/265104803531587584.svg?logo=discord&style=for-the-badge
 [discordlink]: https://discord.gg/Ea6a5cn
 
-A deferred promise.
+Javascript commons
 
 ### Install
 
@@ -39,6 +39,7 @@ setTimeout(() => {
 #### Decorators
 
 > @cache
+
 Call the function/getter only once and keep the result in memory
 
 ```js
