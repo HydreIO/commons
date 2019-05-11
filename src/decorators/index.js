@@ -1,5 +1,5 @@
 export function cache(...a) {
-	let res = undefined
+	let res
 	const [, , { value, get }] = a
 	return {
 		...a[2],
