@@ -1,6 +1,6 @@
-![][licence] [![][npm]][npmlink] [![][travis]][travislink] [![][depfu]][depfulink]
+![][licence] [![][npm]][npmlink] [![][travis]][travislink]
 
-# deferred-promise
+# @hydre/commons
 
 [![][discord]][discordlink] [![][twitter]][twitterlink]
 
@@ -9,8 +9,6 @@
 [npmlink]: https://www.npmjs.com/package/@hydre/deferred-promise
 [travis]: https://img.shields.io/travis/com/HydreIO/deferred-promise.svg?logo=travis&style=for-the-badge
 [travislink]: https://travis-ci.com/HydreIO/deferred-promise
-[depfu]: https://img.shields.io/depfu/HydreIO/deferred-promise.svg?style=for-the-badge
-[depfulink]: https://depfu.com/repos/HydreIO/deferred-promise
 [twitter]: https://img.shields.io/badge/follow-us-blue.svg?logo=twitter&style=for-the-badge
 [twitterlink]: https://twitter.com/hydreio
 [discord]: https://img.shields.io/discord/265104803531587584.svg?logo=discord&style=for-the-badge
@@ -20,12 +18,15 @@ A deferred promise.
 
 ### Install
 
-`npm i @hydre/deferred-promise`
+`npm i @hydre/commons`
 
 ### Use:
 
+#### Deferred Promise
+Execute a promise outside scope
+
 ```js
-import dPromise from '@hydre/deferred-promise'
+import { dPromise } from '@hydre/commons'
 
 const deferred = new dPromise()
 deferred.promise.then(console.log('slt'))
@@ -33,4 +34,27 @@ deferred.promise.then(console.log('slt'))
 setTimeout(() => {
 	deferred.resolve() // or deferred.reject()
 }, 1000)
+```
+
+#### Decorators
+
+> @cache
+Call the function/getter only once and keep the result in memory
+
+```js
+import { cache } from '@hydre/commons'
+
+class Foo {
+
+	@cache
+	bar() {
+		console.log('This line will be printed only once')
+		return new myApiCall()
+	}
+
+	@cache
+	get baz() {
+		return 5 + 5
+	}
+}
 ```

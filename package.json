@@ -1,16 +1,19 @@
 {
-	"name": "@hydre/deferred-promise",
+	"name": "@hydre/commons",
 	"version": "1.0.2",
-	"description": "Resolve a promise outside scope",
-	"author": "Sceat",
-	"main": "lib/deferredPromise.js",
+	"description": "You need some milk ?",
+	"author": "Hydre",
+	"main": "lib/index.js",
 	"homepage": "https://hydre.io",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/HydreIO/deferred-promise"
+		"url": "https://github.com/HydreIO/commons"
 	},
 	"keywords": [
+		"hydre",
+		"commons",
+		"decorators",
 		"deferred-promise",
 		"deferred",
 		"promise",
@@ -26,14 +29,16 @@
 		"access": "public"
 	},
 	"devDependencies": {
-		"@babel/cli": "^7.4.3",
-		"@babel/core": "^7.4.3",
+		"@babel/cli": "^7.4.4",
+		"@babel/core": "^7.4.4",
 		"@babel/node": "^7.2.2",
-		"@babel/plugin-proposal-class-properties": "^7.3.4",
-		"@babel/plugin-proposal-decorators": "^7.2.3",
+		"@babel/plugin-proposal-class-properties": "^7.4.4",
+		"@babel/plugin-proposal-decorators": "^7.4.4",
+		"@babel/plugin-proposal-export-default-from": "^7.2.0",
 		"@babel/plugin-proposal-function-bind": "^7.2.0",
 		"@babel/plugin-proposal-optional-chaining": "^7.2.0",
-		"@babel/preset-env": "^7.0.0-beta.51",
+		"@babel/plugin-proposal-private-methods": "^7.4.4",
+		"@babel/preset-env": "^7.4.4",
 		"blue-tape": "^1.0.0",
 		"tap-nyan": "^1.1.0",
 		"tap-spec": "^5.0.0"
