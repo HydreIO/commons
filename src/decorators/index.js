@@ -1,11 +1,10 @@
 export function cache(...a) {
 	let res = undefined
-	const [obj, , { value, get }] = a
-	const result = args => (value ? obj::value(args) : obj::get())
+	const [, , { value, get }] = a
 	return {
 		...a[2],
 		[value ? 'value' : 'get'](...a) {
-			if (res === undefined) res = result(...a)
+			if (res === undefined) res = value ? this::value(...a) : this::get()
 			return res
 		}
 	}

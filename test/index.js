@@ -33,15 +33,16 @@ tape('A cached getter should be called only once', async t => {
 })
 
 class Foo {
+	i = 0
+	z = 0
+
 	@cache
 	bar() {
-		if (!this.i) this.i = 0
 		return ++this.i
 	}
 
 	@cache
 	get baz() {
-		if (!this.z) this.z = 0
 		return ++this.z
 	}
 }
