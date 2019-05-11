@@ -4,11 +4,11 @@
 
 [![][discord]][discordlink] [![][twitter]][twitterlink]
 
-[licence]: https://img.shields.io/github/license/HydreIO/deferred-promise.svg?style=for-the-badge
-[npm]: https://img.shields.io/npm/v/@hydre/deferred-promise.svg?logo=npm&style=for-the-badge
-[npmlink]: https://www.npmjs.com/package/@hydre/deferred-promise
-[travis]: https://img.shields.io/travis/com/HydreIO/deferred-promise.svg?logo=travis&style=for-the-badge
-[travislink]: https://travis-ci.com/HydreIO/deferred-promise
+[licence]: https://img.shields.io/github/license/HydreIO/commons.svg?style=for-the-badge
+[npm]: https://img.shields.io/npm/v/@hydre/commons.svg?logo=npm&style=for-the-badge
+[npmlink]: https://www.npmjs.com/package/@hydre/commons
+[travis]: https://img.shields.io/travis/com/HydreIO/commons.svg?logo=travis&style=for-the-badge
+[travislink]: https://travis-ci.com/HydreIO/commons
 [twitter]: https://img.shields.io/badge/follow-us-blue.svg?logo=twitter&style=for-the-badge
 [twitterlink]: https://twitter.com/hydreio
 [discord]: https://img.shields.io/discord/265104803531587584.svg?logo=discord&style=for-the-badge
