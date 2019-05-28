@@ -1,6 +1,6 @@
 {
 	"name": "@hydre/commons",
-	"version": "1.0.9",
+	"version": "1.0.10",
 	"description": "You need some milk ?",
 	"author": "Hydre",
 	"main": "lib/index.js",
