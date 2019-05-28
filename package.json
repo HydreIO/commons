@@ -22,8 +22,8 @@
 	"scripts": {
 		"prepack": "npm run build",
 		"build": "babel src -d lib",
-		"test": "babel-node ./test/index.js | tap-spec",
-		"ntest": "babel-node ./test/index.js | tap-nyan",
+		"test": "babel-node test | tap-spec",
+		"ntest": "babel-node test | tap-nyan",
 		"postversion": "git push && git push --tags"
 	},
 	"publishConfig": {
@@ -40,7 +40,7 @@
 		"@babel/plugin-proposal-optional-chaining": "^7.2.0",
 		"@babel/plugin-proposal-private-methods": "^7.4.4",
 		"@babel/preset-env": "^7.4.5",
-		"@hydre/doubt": "^1.0.3",
+		"@hydre/doubt": "^1.0.12",
 		"tap-nyan": "^1.1.0",
 		"tap-spec": "^5.0.0"
 	},
