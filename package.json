@@ -39,10 +39,9 @@
 		"@babel/plugin-proposal-optional-chaining": "^7.2.0",
 		"@babel/plugin-proposal-private-methods": "^7.4.4",
 		"@babel/preset-env": "^7.4.5",
+		"@hydre/doubt": "^1.0.3",
 		"tap-nyan": "^1.1.0",
 		"tap-spec": "^5.0.0"
 	},
-	"dependencies": {
-		"@hydre/doubt": "^1.0.2"
-	}
+	"dependencies": {}
 }
