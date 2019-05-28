@@ -23,7 +23,8 @@
 		"prepack": "npm run build",
 		"build": "babel src -d lib",
 		"test": "babel-node ./test/index.js | tap-spec",
-		"ntest": "babel-node ./test/index.js | tap-nyan"
+		"ntest": "babel-node ./test/index.js | tap-nyan",
+		"postversion": "git push && git push --tags"
 	},
 	"publishConfig": {
 		"access": "public"
