@@ -23,25 +23,26 @@
 		"prepack": "npm run build",
 		"build": "babel src -d lib",
 		"test": "babel-node ./test/index.js | tap-spec",
-		"ntest": "babel-node ./test/index.js | tnyan"
+		"ntest": "babel-node ./test/index.js | tap-nyan"
 	},
 	"publishConfig": {
 		"access": "public"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.4.4",
-		"@babel/core": "^7.4.4",
-		"@babel/node": "^7.2.2",
+		"@babel/core": "^7.4.5",
+		"@babel/node": "^7.4.5",
 		"@babel/plugin-proposal-class-properties": "^7.4.4",
 		"@babel/plugin-proposal-decorators": "^7.4.4",
 		"@babel/plugin-proposal-export-default-from": "^7.2.0",
 		"@babel/plugin-proposal-function-bind": "^7.2.0",
 		"@babel/plugin-proposal-optional-chaining": "^7.2.0",
 		"@babel/plugin-proposal-private-methods": "^7.4.4",
-		"@babel/preset-env": "^7.4.4",
+		"@babel/preset-env": "^7.4.5",
 		"tap-nyan": "^1.1.0",
-		"tap-spec": "^5.0.0",
-		"tape": "^4.10.1",
-		"tape-promise": "^4.0.0"
+		"tap-spec": "^5.0.0"
+	},
+	"dependencies": {
+		"@hydre/doubt": "^1.0.2"
 	}
 }
