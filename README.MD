@@ -17,13 +17,15 @@
 
 Javascript commons
 
-### Install
+## Install
 
-`npm i @hydre/commons`
+```
+npm i @hydre/commons
+```
 
-### Use:
+## Use:
 
-#### Deferred Promise
+### Deferred Promise
 Execute a promise outside scope
 
 ```js
@@ -37,9 +39,9 @@ setTimeout(() => {
 }, 1000)
 ```
 
-#### Decorators
+### Decorators
 
-> @cache
+#### @cache
 
 Call the function/getter only once and keep the result in memory
 
@@ -59,4 +61,36 @@ class Foo {
 		return 5 + 5
 	}
 }
+```
+
+### Helpers
+
+#### mixin
+
+Multiple class inheritance *see [exploring-es7-decorators](https://medium.com/google-developers/exploring-es7-decorators-76ecb65fb841)*
+
+```js
+import { mixin } from '@hydre/commons'
+
+const TimeStone = mixin({
+	get canRewind() {
+		return true
+	}
+})
+
+const PlaysFortnite = mixin({
+	isDumb() {
+		return true
+	}
+})
+
+@TimeStone
+@PlaysFortnite
+class Thanos {
+	isDumb() {
+		return false
+	}
+}
+
+new Thanos().isDumb() |> console.log // print true
 ```
