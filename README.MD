@@ -29,13 +29,13 @@ npm i @hydre/commons
 Execute a promise outside scope
 
 ```js
-import { dPromise } from '@hydre/commons'
+import { Deferred } from '@hydre/commons'
 
-const deferred = new dPromise()
-deferred.promise.then(console.log('slt'))
+const def = new Deferred()
+def.promise.then(console.log('slt'))
 
 setTimeout(() => {
-	deferred.resolve() // or deferred.reject()
+	def.resolve() // or deferred.reject()
 }, 1000)
 ```
 

@@ -1,2 +1,2 @@
-export dPromise from './deferredPromise'
+export Deferred from './deferredPromise'
 export * from './decorators'
