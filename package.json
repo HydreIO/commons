@@ -23,10 +23,6 @@
 		"prepack": "npm run build",
 		"build": "babel src -d lib",
 		"test": "babel-node test | tap-spec",
-		"ntest": "babel-node test | tap-nyan",
-		"patch": "npm version patch",
-		"minor": "npm version minor",
-		"major": "npm version major",
 		"postversion": "git push && git push --tags"
 	},
 	"publishConfig": {
