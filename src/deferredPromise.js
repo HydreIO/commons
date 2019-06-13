@@ -1,6 +1,6 @@
 export default class {
-	promise = new Promise((res, rej) => {
-		this.resolve = res
-		this.reject = rej
+	promise = new Promise((ok, no) => {
+		this.resolve = ok
+		this.reject = no
 	})
 }
